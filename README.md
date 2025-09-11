@@ -57,7 +57,7 @@ Copy the displayed HTTPS URL.
 
 In your RStudio console, change the following code and run it:
 
-``` R
+``` r
 usethis::create_from_github(
   "<Paste the HTTPS URL here>",
   destdir = "<Type the path to the folder where you want to save this repo here>",
@@ -71,7 +71,7 @@ The above code will 'fork' the repo, clone it to your local computer, and opens 
 
 Best practice is to modify your own branch of the repo, rather than editing the 'main' branch directly. (We'll talk about all this in the workshop so don't worry if you are confused at this point.) To make a new branch called 'myname,' run this in your R console:
 
-``` R
+``` r
 usethis::pr_init(branch = 'myname')
 ```
 
@@ -95,7 +95,7 @@ Commit your changes:
 
 Back in your R console, run:
 
-``` R
+``` r
 usethis::pr_init(branch = 'myname')
 ```
 
@@ -106,6 +106,8 @@ I will get a notification that you've suggested a change.
 ## Check your work.
 
 In a couple days (after I've had time to review and accept your request), go back to your browser and to <https://github.com/jt-hicks/github_check_tz_2025>.
+
+Refresh the page.
 
 Open participants.R. Do you see your name?
 
