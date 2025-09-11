@@ -1,1 +1,1 @@
-Joseph Hicks
+Joseph T. Hicks
