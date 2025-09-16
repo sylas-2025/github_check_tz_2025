@@ -1,1 +1,4 @@
-Joseph Hicks
+participants <- c(
+  "Joseph Hicks",
+  "Kilinga-sys"
+)
