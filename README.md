@@ -99,9 +99,11 @@ Back in your R console, run:
 usethis::pr_init(branch = 'myname')
 ```
 
-This pushes your committed changes to GitHub and tries to make a new Pull Request (that is, a suggested change). A new browser window will open to a GitHub page. Click the green "Create pull request" button. Type a message in the "Add a description" field, such as your name. Then push the green "Create pull request" button.
+This pushes your committed changes to GitHub and tries to make a new Pull Request (that is, a suggested change). A new browser window will open to a GitHub page. Click the green "Create pull request" button. 
 
-I will get a notification that you've suggested a change.
+In the "Add a description" field, type one thing (skill or output, etc) that you would like to gain from this workshop. Then push the green "Create pull request" button.
+
+I will then get a notification that you've suggested a change.
 
 ## Check your work.
 
