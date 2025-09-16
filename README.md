@@ -47,7 +47,7 @@ Paste the PAT in response to the dialogue in the console.
 -> Done.
 ```
 
-## Clone, edit, commit and push
+## Fork, clone, edit, commit and push
 
 Go to: <https://github.com/jt-hicks/github_check_tz_2025>
 
@@ -55,23 +55,29 @@ Click the big green button that says “\<\> Code”.
 
 Copy the displayed HTTPS URL.
 
-In RStudio, start a new Project:
+In your RStudio console, change the following code and run it:
 
--   File \> New Project \> Version Control \> Git.
+``` r
+usethis::create_from_github(
+  "<Paste the HTTPS URL here>",
+  destdir = "<Type the path to the folder where you want to save this repo here>",
+  fork = TRUE
+)
+```
 
--   In “Repository URL”, paste the URL of your new GitHub repository. It will be something like this <https://github.com/jt-hicks/github_check_tz_2025.git>.
+The path (`destdir` argument above) is the location on your computer where you want the repository to be saved.
 
-    -   Do you NOT see an option to get the Project from Version Control? Restart RStudio and try again. Still no luck? Go to here (<https://happygitwithr.com/rstudio-see-git>) for tips on how to help RStudio find Git.
+The above code will 'fork' the repo, clone it to your local computer, and opens a new RStudio instance and project.
 
--   Accept the default project directory name, e.g. myrepo, which coincides with the GitHub repo name.
+Best practice is to modify your own branch of the repo, rather than editing the 'main' branch directly. (We'll talk about all this in the workshop so don't worry if you are confused at this point.) To make a new branch called 'myname,' run this in your R console:
 
--   Take note (or change) where the Project will be saved locally.
+``` r
+usethis::pr_init(branch = 'myname')
+```
 
--   Check “Open in new session”.
+This creates the new branch and switches to is (or 'checks it out') in RStudio.
 
--   Click “Create Project”.
-
-From Rstudio, modify the '`participants.R`' file by adding your name.
+Now, in RStudio, modify the '`participants.R`' file by adding your name.
 
 Save your changes.
 
@@ -83,15 +89,25 @@ Commit your changes:
 
 -   If you’re not already in the Git pop-up, click “Commit”.
 
--   Type a message in “Commit message”, such as “Commit from RStudio”.
+-   Type a message in “Commit message”, such as “Added my name”.
 
 -   Click “Commit”.
 
-Click the green “Push” button to send your local changes to GitHub.
+Back in your R console, run:
+
+``` r
+usethis::pr_init(branch = 'myname')
+```
+
+This pushes your committed changes to GitHub and tries to make a new Pull Request (that is, a suggested change). A new browser window will open to a GitHub page. Click the green "Create pull request" button. 
+
+In the "Add a description" field, type one thing (skill or output, etc) that you would like to gain from this workshop. Then push the green "Create pull request" button.
+
+I will then get a notification that you've suggested a change.
 
 ## Check your work.
 
-Go back to your browser and to <https://github.com/jt-hicks/github_check_tz_2025>.
+In a couple days (after I've had time to review and accept your request), go back to your browser and to <https://github.com/jt-hicks/github_check_tz_2025>.
 
 Refresh the page.
 
@@ -109,4 +125,4 @@ If not, post an issue on the Issues tab of <https://github.com/jt-hicks/github_c
 
 -   In 'Add a description', describe what happened when you tried to do the tutorial. Add any error or warning messages you received.
 
--   When you are done, click the green 'Create' button.
+-   When you are done, click the green 'Create' button. (We'll still see you in Arusha!)
