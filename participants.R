@@ -1,5 +1,5 @@
 participants <- c(
-  "Joseph Hicks",
+  "Joseph T. Hicks",
   "Oliver Simmons",
   "Kilinga-sys",
   "Sylas Oswald"
