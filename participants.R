@@ -4,4 +4,5 @@ participants <- c(
   "Kilinga-sys",
   "Sylas Oswald"
   "Dishon Ndaru"
+  "Ninael Jonas"
 )
