@@ -96,7 +96,7 @@ Commit your changes:
 Back in your R console, run:
 
 ``` r
-usethis::pr_init(branch = 'myname')
+usethis::pr_push()
 ```
 
 This pushes your committed changes to GitHub and tries to make a new Pull Request (that is, a suggested change). A new browser window will open to a GitHub page. Click the green "Create pull request" button. 
